@@ -18,6 +18,11 @@ by Radek Burget.
 
 [http://cssbox.sourceforge.net](http://cssbox.sourceforge.net "")
 
+This fork
+---------
+
+The aim of this fork will be to provide the output as json instead of xml.
+
 Compilation
 -----------
 
