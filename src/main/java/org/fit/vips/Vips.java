@@ -293,10 +293,15 @@ public class Vips {
 		//		constructor.normalizeSeparatorsSoftMax();
 		constructor.normalizeSeparatorsMinMax();
 
-		VipsOutput vipsOutput = new VipsOutput(_pDoC);
+//		VipsOutput vipsOutput = new VipsOutput(_pDoC);
+//		vipsOutput.setEscapeOutput(_outputEscaping);
+//		vipsOutput.setOutputFileName(_filename);
+//		vipsOutput.writeXML(constructor.getVisualStructure(), _viewport);
+
+		VipsOutputJSON vipsOutput = new VipsOutputJSON(_pDoC);
 		vipsOutput.setEscapeOutput(_outputEscaping);
 		vipsOutput.setOutputFileName(_filename);
-		vipsOutput.writeXML(constructor.getVisualStructure(), _viewport);
+		vipsOutput.writeJSON(constructor.getVisualStructure(), _viewport);
 
 		endTime = System.nanoTime();
 
